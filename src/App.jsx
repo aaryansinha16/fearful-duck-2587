@@ -1,40 +1,41 @@
 import Navbar from "./Components/Navbar/MainNavbar/Navbar";
 import "./App.css";
 import { Box, Spacer } from "@chakra-ui/react";
-import TopSec from "./Components/TopSection/TopSec";
 import RespNav from "./Components/Navbar/ResponsiveNavbar/RespNav";
+import AllRoutes from "./Routes/AllRoutes";
+// import TopSec from "./Components/HomePage/TopSection/TopSec";
+// import Benifits from "./Components/HomePage/Benifits/Benifits";
+// import HomePage from "./Components/HomePage/Homepage";
 
 export default function App() {
   return (
     <div className="App">
+
+
+
+      {/* Navbar */}
       <Box className="deskNav">
         <Box borderTop="4px solid #4EA819"
           boxShadow="lg"
           p="1"
-          display="fixed"
-          width="100%">
+          position="fixed"
+          width="100%"
+          top='0'
+          zIndex='100'
+          bgColor='white'>
         <Navbar />
         </Box>
       </Box>
 
-        {/* <br/>
-        <br/>
-        <br/>
-        <br/> */}
-
-      <Box border='1px solid red' marginTop='30px'>
+      <Box className="respNav">
         <RespNav/>
       </Box>
 
-      <Box
-        borderRadius="0% 0% 100% 100% / 0% 39% 61% 61%"
-        bg="gray.200"
-        h="80vh"
-        w="100%"
-      >
-        <TopSec />
+      {/* Navbar ends */}
+      <AllRoutes/>
 
-      </Box>
+      {/* <HomePage/> */}
+
     </div>
   );
 }

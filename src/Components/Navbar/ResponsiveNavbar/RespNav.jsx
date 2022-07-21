@@ -1,17 +1,31 @@
-import {Box, HStack} from '@chakra-ui/react'
+import {Box, HStack, Image, Heading, Flex, Spacer, Icon } from '@chakra-ui/react'
 import TopMenu from './topMenu'
+import { ArrowRightIcon } from '@chakra-ui/icons'
 
 export default function RespNav(){
     return (
-        <HStack>
+        <HStack pr={9} pl={9} pt={5} pb={5}>
             <Box>
                 <TopMenu/>
             </Box>
-            <Box>
 
-            </Box>
+            <Spacer/>
+
             <Box>
-                
+                <Flex alignItems="center">
+                    <Image
+                        src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/9e85a16a-c862-4238-9ca5-f5dfa2df8a84.png?auto=format&ixlib=react-9.0.3"
+                        w="3rem"
+                    />
+                    <Heading as="h1" size="lg" fontWeight="medium">
+                        DeskTime
+                    </Heading>
+                </Flex>
+            </Box>
+            <Spacer/>
+
+            <Box>
+                <ArrowRightIcon/>
             </Box>
         </HStack>
     )

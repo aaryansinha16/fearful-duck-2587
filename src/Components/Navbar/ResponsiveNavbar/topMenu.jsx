@@ -11,7 +11,8 @@ import {
     Button,
     Input,
     HStack,
-    Link
+    Link,
+    Flex
   } from '@chakra-ui/react'
 
   import { IconButton } from "@chakra-ui/react";
@@ -36,15 +37,15 @@ import {
           <DrawerContent>
             <DrawerCloseButton />
   
-            <DrawerBody>
-              <HStack>
-                <Link>Demo</Link>
-                <Link>Features</Link>
-                <Link>Pricing</Link>
-                <Link>About Us</Link>
-                <Link>FAQ</Link>
-                <Link>Blog</Link>
-              </HStack>
+            <DrawerBody textAlign='center'>
+              <Flex flexDirection='column'>
+                <Link fontSize='18px'>Demo</Link>
+                <Link fontSize='18px'>Features</Link>
+                <Link fontSize='18px'>Pricing</Link>
+                <Link fontSize='18px'>About Us</Link>
+                <Link fontSize='18px'>FAQ</Link>
+                <Link fontSize='18px'>Blog</Link>
+              </Flex>
             </DrawerBody>
   
             <DrawerFooter>
