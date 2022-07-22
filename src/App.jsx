@@ -3,6 +3,7 @@ import "./App.css";
 import { Box, Spacer } from "@chakra-ui/react";
 import RespNav from "./Components/Navbar/ResponsiveNavbar/RespNav";
 import AllRoutes from "./Routes/AllRoutes";
+import Footer from "./Components/Footer/Footer";
 // import TopSec from "./Components/HomePage/TopSection/TopSec";
 // import Benifits from "./Components/HomePage/Benifits/Benifits";
 // import HomePage from "./Components/HomePage/Homepage";
@@ -27,14 +28,20 @@ export default function App() {
         </Box>
       </Box>
 
-      <Box className="respNav">
+      <Box className="respNav" mb='-100px '>
         <RespNav/>
       </Box>
 
       {/* Navbar ends */}
+
+
       <AllRoutes/>
 
-      {/* <HomePage/> */}
+      <Box w='100%'>
+        <Footer/>
+      </Box>
+        
+
 
     </div>
   );

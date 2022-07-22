@@ -1,5 +1,6 @@
 import { Box, VStack, Flex, Spacer, Heading , Text, Input, Button, Link, AspectRatio, Center, Stack, Image} from "@chakra-ui/react";
 
+
 export default function TopSec() {
   return (
     <VStack >
@@ -46,7 +47,7 @@ export default function TopSec() {
         <Box w='48%' height='90%' >
 
           <AspectRatio maxW='100%' ratio={16/9} marginTop='1rem'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sgmDvqlSMF4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sgmDvqlSMF4?rel=0&autoplay=1" title="YouTube video player"  allowFullScreen/>
           </AspectRatio>
 
         </Box>

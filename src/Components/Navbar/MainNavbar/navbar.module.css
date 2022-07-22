@@ -1,4 +1,4 @@
-a {
+.navDiv a {
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -10,7 +10,7 @@ a {
     color: #475056;  
   }
   
-  a::after {
+  .navDiv a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -24,9 +24,8 @@ a {
     color: #475056;
   }
   
-  a:hover::after {
+  .navDiv a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
     color: #475056;
   }
-  
