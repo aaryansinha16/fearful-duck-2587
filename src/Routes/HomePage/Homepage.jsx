@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import TopSec from "./TopSection/TopSec";
 import Benifits from "./Benifits/Benifits";
+import FaqSec from "./FAQSec/FaqSec";
 
 export default function HomePage(){
     return (
@@ -15,8 +16,12 @@ export default function HomePage(){
                 <TopSec />
             </Box>
 
-            <Box border='1px soild green' w='100%' mt='50px' >
+            <Box w='100%' mt='50px' >
                 <Benifits/>
+            </Box>
+
+            <Box w='100%' border='1px solid red'>
+                <FaqSec/>
             </Box>
         </>
     )
