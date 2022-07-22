@@ -1,6 +1,7 @@
 import { Box, Button, Image, Heading, Flex, Link } from "@chakra-ui/react";
 import DropDown from "./DropDown";
 import "./navbar.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -45,9 +46,11 @@ export default function Navbar() {
           <a href="#">Blog</a>
         </Box>
         <Box>
-          <Button variant="outline" fontSize="14px" p={2} fontWeight="500">
-            LOGIN
-          </Button>
+          <NavLink to='/login'>
+            <Button variant="outline" fontSize="14px" p={2} fontWeight="500">
+              LOGIN
+            </Button>
+          </NavLink>
         </Box>
         <Box>
           <Button
