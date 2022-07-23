@@ -20,7 +20,7 @@ export default function HomePage(){
                 <Benifits/>
             </Box>
 
-            <Box w='100%' border='1px solid red'>
+            <Box w='100%' mb='50px' mt='50px' >
                 <FaqSec/>
             </Box>
         </>
