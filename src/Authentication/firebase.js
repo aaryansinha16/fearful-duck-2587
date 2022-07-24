@@ -21,8 +21,10 @@ import { useToast } from '@chakra-ui/react'
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAfuaWWNItdu2lMHv3iztyrG-pv2n8kL50",
+    apiKey: "AIzaSyAfuaWWNItdu2lMHv3iztyrG-pv2n8kL50",//firebase key
+    // apiKey: "AIzaSyAjESFWDweKkEJ5D4nLu1cvSKRmyzNAtWA", // console.google key
     authDomain: "mydesktime-f6fd1.firebaseapp.com",
+    // authDomain: "desktime.vercel.app",
     projectId: "mydesktime-f6fd1",
     storageBucket: "mydesktime-f6fd1.appspot.com",
     messagingSenderId: "1073659343278",
@@ -48,8 +50,24 @@ const signInWithGoogle = async () => {
         email: user.email,
       });
     }
+    toast({
+      title: 'Login Successful.',
+      description: "You've successfully logged in",
+      status: 'success',
+      duration: 9000,
+      isClosable: true,
+      position: 'bottom'
+    })
   } catch (err) {
     console.error(err);
+    toast({
+      title: err.message,
+      description: "Entered email already used, use another one.",
+      status: 'error',
+      duration: 9000,
+      isClosable: true,
+      position: 'bottom'
+    })
     // alert(err.message);
   }
 };
@@ -58,9 +76,25 @@ const signInWithGoogle = async () => {
 const logInWithEmailAndPassword = async (auth,email, password) => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
+    toast({
+      title: 'Login Successful.',
+      description: "You've successfully logged in",
+      status: 'success',
+      duration: 9000,
+      isClosable: true,
+      position: 'bottom'
+    })
   } catch (err) {
     console.error(err);
-    alert(err.message);
+    toast({
+      title: err.message,
+      description: "Entered email already used, use another one.",
+      status: 'error',
+      duration: 9000,
+      isClosable: true,
+      position: 'bottom'
+    })
+    // alert(err.message);
   }
 };
 
