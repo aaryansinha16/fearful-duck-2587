@@ -26,6 +26,8 @@ import {
 
   import React, {useState, useEffect} from 'react'
 
+  import { logout } from "../../../Authentication/firebase";
+
   export default function TopMenu() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
@@ -112,6 +114,9 @@ import {
                       MY DESKTIME
                     </Button>
                   </NavLink>
+                  <Button onClick={logout} colorScheme='red' color='white'>
+                    Logout
+                  </Button>
                 </Box> </>}
 
 
