@@ -1,6 +1,6 @@
 # DeskTime Clone
 
-## Table of Contents
+## Table of Contents 
 
 - [Overview](#overview)
 - [Built With](#built-with)
